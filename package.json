@@ -1,18 +1,19 @@
 {
-  "name": "@sushiswap/sdk",
+  "name": "@shibaswap/sdk",
   "license": "MIT",
-  "version": "5.0.0-canary.6",
-  "description": "🛠 An SDK for building applications on top of Sushiswap.",
+  "version": "0.0.5",
+  "description": "🛠 An SDK for building applications on top of Shibaswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/sushiswap/sushiswap-sdk",
+  "repository": "https://github.com/shibaswap/shibaswap-sdk",
   "keywords": [
     "uniswap",
     "sushiswap",
-    "ethereum"
+    "ethereum",
+    "shibaswap"
   ],
   "module": "dist/sdk.esm.js",
   "scripts": {
