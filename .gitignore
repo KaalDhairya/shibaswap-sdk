@@ -1,2 +1,6 @@
 dist
 node_modules
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/shibaswap-sdk.iml
+/.idea/vcs.xml
