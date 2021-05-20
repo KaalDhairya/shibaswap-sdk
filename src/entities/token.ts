@@ -81,7 +81,7 @@ export const WETH = {
     'Wrapped Ether'
   ),
   [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xd0A1E359811322d97991E03f863a0C30C2cF029C', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x7b7aE6E0b8240e711C3B8854d780E22469d76a37', 18, 'WETH', 'Wrapped Ether'), //ShibaSwap change
   [ChainId.FANTOM]: new Token(ChainId.FANTOM, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'),
   [ChainId.FANTOM_TESTNET]: new Token(
     ChainId.FANTOM_TESTNET,
