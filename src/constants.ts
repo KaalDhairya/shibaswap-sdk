@@ -206,7 +206,7 @@ export const SHIBASWAP_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0x3A07aDAE1175AE8859411B2A264D6a01050E8f9B', // Shibaswap
+  [ChainId.KOVAN]: '0xd4d271271c4EecC9A4a7633B64673CcE6A17A25f', // Shibaswap
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
@@ -229,7 +229,7 @@ export const SHIBASWAP_ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.RINKEBY]: '',
   [ChainId.ROPSTEN]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0x129Db2d40050b46Bbf361eee010c6CE7345C5168', // Address for UniswapV2Router02 for Shibaswap
+  [ChainId.KOVAN]: '0x4063270362F942C265CCcB257c616852b1759AE2', // Address for UniswapV2Router02 for Shibaswap
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
