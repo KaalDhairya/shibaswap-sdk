@@ -158,3 +158,28 @@ export const WETH = {
     'Wrapped ONE'
   )
 }
+
+export const USDC = {
+  [ChainId.MAINNET]: null,
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0cf2cd0277f75c8799b5526e0aa104c8797b0b5c', 18, 'USDC', 'USDC'),
+}
+
+export const USDT = {
+  [ChainId.MAINNET]: null,
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xd345350e7ba96a1cb3258399db1e3762853c1284', 18, 'USDT', 'USDT'),
+}
+
+export const WBTC = {
+  [ChainId.MAINNET]: null,
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xB7b55994a20C8A7097E77B45C5Ae7FBA88E199F3', 18, 'wBTC', 'Wrapped BTC'),
+}
+
+export const DAI = {
+  [ChainId.MAINNET]: null,
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x81dcdd94b8c1eadcd6e30a462d862d07bf429119', 18, 'DAI', 'DAI'),
+}
+
+export const BONE = {
+  [ChainId.MAINNET]: null,
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x8335daF4A84545aC5576BD907E5d8E75be3B20D4', 18, 'BONE', 'BONE DOGECOIN KILLER'),
+}
