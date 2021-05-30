@@ -181,5 +181,5 @@ export const DAI = {
 
 export const BONE = {
   [ChainId.MAINNET]: null,
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x8335daF4A84545aC5576BD907E5d8E75be3B20D4', 18, 'BONE', 'BONE DOGECOIN KILLER'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x1Bc67Cfd1b6575f605E668783a38c752f9842680', 18, 'BONE', 'BONE DOGECOIN KILLER'),
 }
