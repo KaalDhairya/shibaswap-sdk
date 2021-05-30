@@ -344,7 +344,7 @@ export const SHIBASWAP_BURY_BONE_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0xea056c2449E364F0017eE3b64456437F3d90C1d2',
+  [ChainId.KOVAN]: '0xd15f43a801D251ECe40D8652567776407a190298',
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
