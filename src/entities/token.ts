@@ -179,7 +179,18 @@ export const DAI = {
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x81dcdd94b8c1eadcd6e30a462d862d07bf429119', 18, 'DAI', 'DAI'),
 }
 
+//TODO Update once live
 export const BONE = {
   [ChainId.MAINNET]: null,
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x1Bc67Cfd1b6575f605E668783a38c752f9842680', 18, 'BONE', 'BONE DOGECOIN KILLER'),
+}
+
+export const SHIBA_INU = {
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE', 18, 'SHIB', 'SHIBA INU'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x6DAe78A63988D5eC4880fdF0AA2cC1605abAB08A', 18, 'SHIB', 'SHIBA INU'),
+}
+
+export const LEASH = {
+  [ChainId.MAINNET]: new Token(ChainId.KOVAN, '0x27C70Cd1946795B66be9d954418546998b546634', 18, 'LEASH', 'DOGE KILLER'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xEb8F20036c047987E4C3F2eaB8E8dbF3df7750dd', 18, 'LEASH', 'DOGE KILLER'),
 }
