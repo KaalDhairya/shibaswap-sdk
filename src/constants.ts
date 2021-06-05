@@ -212,7 +212,7 @@ export const SHIBASWAP_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0xbF97B99Fb9810E705027914957073Eb6d860fA9D',//'0x842e15348eea1391698f82f8bd29f728bd71b20b', // Shibaswap
+  [ChainId.KOVAN]: '0x96E977D5734Fe3ADef6507D21Db6e9C0bAac22c8',//'0x842e15348eea1391698f82f8bd29f728bd71b20b', // Shibaswap
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
@@ -236,7 +236,7 @@ export const SHIBASWAP_ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.RINKEBY]: '',
   [ChainId.ROPSTEN]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0xa6A929Ba60b1A052dE6F70EA8387c898091f6A31',//'0xf68c706a9A5C9fe24eaE5009F5c62b2179997f7d',//'0xc010cdBA860B130f3d42f326676dEBE6a008418B', // Address for UniswapV2Router02 for Shibaswap
+  [ChainId.KOVAN]: '0xb3fe7862299519E6F3544Cc991BbF20B0adC4E03',//'0xf68c706a9A5C9fe24eaE5009F5c62b2179997f7d',//'0xc010cdBA860B130f3d42f326676dEBE6a008418B', // Address for UniswapV2Router02 for Shibaswap
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
@@ -308,7 +308,7 @@ export const SHIBASWAP_BONE_TOKEN_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0x6c636DfaFB3DD7B3b24bbd709Ab520bf2F33c53a',//'0x1Bc67Cfd1b6575f605E668783a38c752f9842680',
+  [ChainId.KOVAN]: '0xf29b44b9bd17316dD2305afbBcD2cb1146112CE1',//'0x1Bc67Cfd1b6575f605E668783a38c752f9842680',
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
@@ -332,7 +332,7 @@ export const SHIBASWAP_TOPDOG_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0xe32433EDa007B57f760bc3E39D5264b76029cc50',//'0xFd9aee78147312f2A50d9Fc96dD40fBD6D62DFf2',
+  [ChainId.KOVAN]: '0xE413965C2139C1BBe520279e55B205CCa19B3ab9',//'0xFd9aee78147312f2A50d9Fc96dD40fBD6D62DFf2',
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
@@ -356,7 +356,7 @@ export const SHIBASWAP_BURY_BONE_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0x704BB983c8Fc7BFa082B27C00ECA6ca06c8a0134',//'0xd15f43a801D251ECe40D8652567776407a190298',
+  [ChainId.KOVAN]: '0xaFd395a2a95Cbd13721f8077fb6f55e14d48E554',//'0xd15f43a801D251ECe40D8652567776407a190298',
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
@@ -380,7 +380,7 @@ export const SHIBASWAP_BURY_LEASH_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0x7A13449fc2d46C8b5008E9EB95d7e2827f39bfB4',//'0x4263D224046c70C6776C36CC0F387e4a594E3253',
+  [ChainId.KOVAN]: '0xac05f1fE985541377D22a9F2fE7cE954175ebB5E',//'0x4263D224046c70C6776C36CC0F387e4a594E3253',
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
@@ -404,7 +404,7 @@ export const SHIBASWAP_BURY_SHIB_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0x67aa10518983af6015803f908C01b1FFf1575B3B',//'0x46F8aBAF0414031DE7E885571Fbd9fB2d0690851', //0x284D75EfE549Cd157a344a322fB18CDAcd60ba2A
+  [ChainId.KOVAN]: '0xad7AC262cC107b7e72D775E5576319296a377e5d',//'0x46F8aBAF0414031DE7E885571Fbd9fB2d0690851', //0x284D75EfE549Cd157a344a322fB18CDAcd60ba2A
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',

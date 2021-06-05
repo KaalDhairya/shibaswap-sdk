@@ -82,7 +82,7 @@ export const WETH = {
     'Wrapped Ether'
   ),
   [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x8910A4Ef5b2c6E54506c7e1c9796F0220aA5e97f', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xaE15AcEB46f6477543F2BF641d9547FB8607a9fE', 18, 'WETH', 'Wrapped Ether'),
   [ChainId.FANTOM]: new Token(ChainId.FANTOM, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'),
   [ChainId.FANTOM_TESTNET]: new Token(
     ChainId.FANTOM_TESTNET,
@@ -187,7 +187,7 @@ export const DAI = {
 //TODO GOLIVE TOCHECK DECIMALS
 export const BONE = {
   [ChainId.MAINNET]: null,
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x6c636DfaFB3DD7B3b24bbd709Ab520bf2F33c53a', 18, 'BONE', 'BONE DOGECOIN KILLER'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf29b44b9bd17316dD2305afbBcD2cb1146112CE1', 18, 'BONE', 'BONE DOGECOIN KILLER'),
 }
 
 //TODO GOLIVE TOCHECK DECIMALS
