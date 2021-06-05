@@ -1,7 +1,7 @@
 {
   "name": "@shibaswap/sdk",
   "license": "MIT",
-  "version": "0.2.7",
+  "version": "0.2.11",
   "description": "🛠 An SDK for building applications on top of Shibaswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
