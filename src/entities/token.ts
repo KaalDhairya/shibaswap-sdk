@@ -160,33 +160,27 @@ export const WETH = {
   )
 }
 
-// TODO GOLIVE TOCHECK DECIMALS
-export const USDC = {
-  [ChainId.MAINNET]: null,
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0cf2cd0277f75c8799b5526e0aa104c8797b0b5c', 6, 'USDC', 'USDC'),
+export type ChainTokenMap = {
+  readonly [chainId in ChainId]?: Token
 }
 
-// TODO GOLIVE TOCHECK DECIMALS
-export const USDT = {
-  [ChainId.MAINNET]: null,
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x763487Dcc79c39903a06e0c67ff12984578f1781', 6, 'USDT', 'USDT'),
+export const USDC: ChainTokenMap = {
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0cf2cd0277f75c8799b5526e0aa104c8797b0b5c', 18, 'USDC', 'USDC'),
 }
 
-// TODO GOLIVE TOCHECK DECIMALS
-export const WBTC = {
-  [ChainId.MAINNET]: null,
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x3673628B0a9B27480c57026FCddc9Ac16d61A6EA', 8, 'wBTC', 'Wrapped BTC'),
+export const USDT: ChainTokenMap = {
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x763487Dcc79c39903a06e0c67ff12984578f1781', 18, 'USDT', 'USDT'),
 }
 
-// TODO GOLIVE TOCHECK DECIMALS
-export const DAI = {
-  [ChainId.MAINNET]: null,
+export const WBTC: ChainTokenMap = {
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x3673628B0a9B27480c57026FCddc9Ac16d61A6EA', 18, 'wBTC', 'Wrapped BTC'),
+}
+
+export const DAI: ChainTokenMap = {
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x560EA439FA3c8ee6A4cE43a2A74320AcE26Aa97a', 18, 'DAI', 'DAI'),
 }
 
-//TODO GOLIVE TOCHECK DECIMALS
-export const BONE = {
-  [ChainId.MAINNET]: null,
+export const BONE: ChainTokenMap = {
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf29b44b9bd17316dD2305afbBcD2cb1146112CE1', 18, 'BONE', 'BONE DOGECOIN KILLER'),
 }
 
