@@ -81,7 +81,7 @@ export const WETH = {
     'Wrapped Ether'
   ),
   [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xd0A1E359811322d97991E03f863a0C30C2cF029C', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x7b7aE6E0b8240e711C3B8854d780E22469d76a37', 18, 'WETH', 'Wrapped Ether'),
   [ChainId.FANTOM]: new Token(ChainId.FANTOM, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'),
   [ChainId.FANTOM_TESTNET]: new Token(
     ChainId.FANTOM_TESTNET,
@@ -157,4 +157,38 @@ export const WETH = {
     'WONE',
     'Wrapped ONE'
   )
+}
+
+export type ChainTokenMap = {
+  readonly [chainId in ChainId]?: Token
+}
+
+export const USDC: ChainTokenMap = {
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0cf2cd0277f75c8799b5526e0aa104c8797b0b5c', 18, 'USDC', 'USDC'),
+}
+
+export const USDT: ChainTokenMap = {
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xd345350e7ba96a1cb3258399db1e3762853c1284', 18, 'USDT', 'USDT'),
+}
+
+export const WBTC: ChainTokenMap = {
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xB7b55994a20C8A7097E77B45C5Ae7FBA88E199F3', 18, 'wBTC', 'Wrapped BTC'),
+}
+
+export const DAI: ChainTokenMap = {
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x81dcdd94b8c1eadcd6e30a462d862d07bf429119', 18, 'DAI', 'DAI'),
+}
+
+export const BONE: ChainTokenMap = {
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x1Bc67Cfd1b6575f605E668783a38c752f9842680', 18, 'BONE', 'BONE DOGECOIN KILLER'),
+}
+
+export const SHIBA_INU = {
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE', 18, 'SHIB', 'SHIBA INU'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x6DAe78A63988D5eC4880fdF0AA2cC1605abAB08A', 18, 'SHIB', 'SHIBA INU'),
+}
+
+export const LEASH = {
+  [ChainId.MAINNET]: new Token(ChainId.KOVAN, '0x27C70Cd1946795B66be9d954418546998b546634', 18, 'LEASH', 'DOGE KILLER'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xEb8F20036c047987E4C3F2eaB8E8dbF3df7750dd', 18, 'LEASH', 'DOGE KILLER'),
 }
