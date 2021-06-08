@@ -159,29 +159,27 @@ export const WETH = {
   )
 }
 
-export const USDC = {
-  [ChainId.MAINNET]: null,
+export type ChainTokenMap = {
+  readonly [chainId in ChainId]?: Token
+}
+
+export const USDC: ChainTokenMap = {
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0cf2cd0277f75c8799b5526e0aa104c8797b0b5c', 18, 'USDC', 'USDC'),
 }
 
-export const USDT = {
-  [ChainId.MAINNET]: null,
+export const USDT: ChainTokenMap = {
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xd345350e7ba96a1cb3258399db1e3762853c1284', 18, 'USDT', 'USDT'),
 }
 
-export const WBTC = {
-  [ChainId.MAINNET]: null,
+export const WBTC: ChainTokenMap = {
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xB7b55994a20C8A7097E77B45C5Ae7FBA88E199F3', 18, 'wBTC', 'Wrapped BTC'),
 }
 
-export const DAI = {
-  [ChainId.MAINNET]: null,
+export const DAI: ChainTokenMap = {
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x81dcdd94b8c1eadcd6e30a462d862d07bf429119', 18, 'DAI', 'DAI'),
 }
 
-//TODO Update once live
-export const BONE = {
-  [ChainId.MAINNET]: null,
+export const BONE: ChainTokenMap = {
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x1Bc67Cfd1b6575f605E668783a38c752f9842680', 18, 'BONE', 'BONE DOGECOIN KILLER'),
 }
 
