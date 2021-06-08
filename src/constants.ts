@@ -611,3 +611,9 @@ export const xLEASH_BONE_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: st
   [ChainId.ROPSTEN]: '',
   [ChainId.KOVAN]: '0x73595C0736BAc4085153D2eC7328f3f91b57A87c'
 }
+
+export const BONE_LOCKER_ADDRESS: { [chainId in ChainId]?: string } = {
+  [ChainId.MAINNET]: '',
+  [ChainId.ROPSTEN]: '',
+  [ChainId.KOVAN]: '0x892d980C11ee94110416D5d2Ca6726F8B31814dF'
+}
