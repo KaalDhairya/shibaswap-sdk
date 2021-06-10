@@ -572,44 +572,44 @@ export const SOLIDITY_TYPE_MAXIMA = {
 export const USDC_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
-  [ChainId.KOVAN]: '0xaee6cA2aADE60e5A49FEEB9Db0c732D0B2526780'
+  [ChainId.KOVAN]: '0x070D072a40413864d53aff8a222414e8b5b0Fb19'
 }
 
 export const USDT_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
-  [ChainId.KOVAN]: '0x241DcA991A3e1492F181f0E4F7a62Fc6d4C89287'
+  [ChainId.KOVAN]: '0x9D451F0302a55Be626d44da9EDc9f6074b1951E5'
 }
 
 
 export const WBTC_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
-  [ChainId.KOVAN]: '0x7f184f28B51582b48bBD502eD54541b92dA36f4d'
+  [ChainId.KOVAN]: '0x98364E4BCF3efd2d2C9E5a8a3E3c1C853Bce279C'
 }
 
 export const DAI_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
-  [ChainId.KOVAN]: '0x9eD4C192f87C9aAb57020aFD1BB682894153381E'
+  [ChainId.KOVAN]: '0x94Ed38Aa572E38c18637ab69c6d6F4D90bad00aC'
 }
 
 export const xSHIB_BONE_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
-  [ChainId.KOVAN]: '0x3345087146Ea9bAF4Aa917f66F90cE3920c20611'
+  [ChainId.KOVAN]: '0xFC231B63b9efd7Ba951b4F6C16C6F9fE797aFEe2'
 }
 
 export const xSHIB_WETH_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
-  [ChainId.KOVAN]: '0x90aFD4d8F3295A4Df18eA81B8a89a0Bd2c2a02BC'
+  [ChainId.KOVAN]: '0x9FD5f357AA309d8d72FEAAab5c1e6e960C7B80ED'
 }
 
 export const xLEASH_BONE_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
-  [ChainId.KOVAN]: '0x73595C0736BAc4085153D2eC7328f3f91b57A87c'
+  [ChainId.KOVAN]: '0xa6BeA698Fa2f41C47E28a5934602ba65958748f7'
 }
 
 export const tBONE_BONE_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
