@@ -612,6 +612,12 @@ export const xLEASH_BONE_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: st
   [ChainId.KOVAN]: '0x73595C0736BAc4085153D2eC7328f3f91b57A87c'
 }
 
+export const tBONE_BONE_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
+  [ChainId.MAINNET]: '',
+  [ChainId.ROPSTEN]: '',
+  [ChainId.KOVAN]: '0x3F0ffaB9Fd4E8E12c7d76455356a5c8374538534'
+}
+
 export const BONE_LOCKER_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
