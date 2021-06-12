@@ -165,11 +165,11 @@ export type ChainTokenMap = {
 }
 
 export const USDC: ChainTokenMap = {
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0cf2cd0277f75c8799b5526e0aa104c8797b0b5c', 6, 'USDC', 'USDC'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x311B99c277144eADd14193589ceD12ECC467d39a', 6, 'USDC', 'USDC'),
 }
 
 export const USDT: ChainTokenMap = {
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x763487Dcc79c39903a06e0c67ff12984578f1781', 6, 'USDT', 'USDT'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x9E3099cA4bF0FddfAa79AC7C5dA86b0Bd8BA056C', 6, 'USDT', 'USDT'),
 }
 
 export const WBTC: ChainTokenMap = {
@@ -187,11 +187,11 @@ export const BONE: ChainTokenMap = {
 //TODO GOLIVE TOCHECK DECIMALS
 export const SHIBA_INU = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE', 18, 'SHIB', 'SHIBA INU'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xE9A1Ed75621D9357C753e1436Fe9EB63628bde67', 18, 'SHIB', 'SHIBA INU'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0b2367E0e56Fd9b63388F1478830c8a4b1bA5963', 18, 'SHIB', 'SHIBA INU'),
 }
 
 //TODO GOLIVE TOCHECK DECIMALS
 export const LEASH = {
   [ChainId.MAINNET]: new Token(ChainId.KOVAN, '0x27C70Cd1946795B66be9d954418546998b546634', 18, 'LEASH', 'DOGE KILLER'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x7660ef103b2b03EFB3b18a7140dB6296eA61d725', 18, 'LEASH', 'DOGE KILLER'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xb554A5bf612B741918531F29236a8C06C31f4042', 18, 'LEASH', 'DOGE KILLER'),
 }
