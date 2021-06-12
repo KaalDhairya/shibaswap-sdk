@@ -165,15 +165,15 @@ export type ChainTokenMap = {
 }
 
 export const USDC: ChainTokenMap = {
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0cf2cd0277f75c8799b5526e0aa104c8797b0b5c', 18, 'USDC', 'USDC'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0cf2cd0277f75c8799b5526e0aa104c8797b0b5c', 6, 'USDC', 'USDC'),
 }
 
 export const USDT: ChainTokenMap = {
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x763487Dcc79c39903a06e0c67ff12984578f1781', 18, 'USDT', 'USDT'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x763487Dcc79c39903a06e0c67ff12984578f1781', 6, 'USDT', 'USDT'),
 }
 
 export const WBTC: ChainTokenMap = {
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x3673628B0a9B27480c57026FCddc9Ac16d61A6EA', 18, 'wBTC', 'Wrapped BTC'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x3673628B0a9B27480c57026FCddc9Ac16d61A6EA', 8, 'wBTC', 'Wrapped BTC'),
 }
 
 export const DAI: ChainTokenMap = {
