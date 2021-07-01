@@ -164,31 +164,31 @@ export type ChainTokenMap = {
   readonly [chainId in ChainId]?: Token
 }
 
-export const USDC: ChainTokenMap = {
+export const USDC = {
   [ChainId.MAINNET]: new Token(ChainId.KOVAN, '0x27C70Cd1946795B66be9d954418546998b546634', 6, 'USDC', 'USD Coin'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x72dd868Fe89113531b18f997844b77563CB665b8', 6, 'USDC', 'USD Coin'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x5067F6Dbdccd70771352e9d5E5a19DDf6A8fAfdb', 6, 'USDC', 'USD Coin'),
 }
 
-export const USDT: ChainTokenMap = {
+export const USDT = {
   [ChainId.MAINNET]: new Token(ChainId.KOVAN, '0x27C70Cd1946795B66be9d954418546998b546634', 6, 'USDT', 'USDT'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x9E3099cA4bF0FddfAa79AC7C5dA86b0Bd8BA056C', 6, 'USDT', 'USDT'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x3672Aec96464C945F8274BB22Ef1de64398deB44', 6, 'USDT', 'USDT'),
 }
 
-export const WBTC: ChainTokenMap = {
+export const WBTC = {
   [ChainId.MAINNET]: new Token(ChainId.KOVAN, '0x27C70Cd1946795B66be9d954418546998b546634', 8, 'wBTC', 'Wrapped BTC'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x3673628B0a9B27480c57026FCddc9Ac16d61A6EA', 8, 'wBTC', 'Wrapped BTC'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0xc59837d0AeBCC6AF23Dcb3c23eb757b07B0EaE0c', 8, 'wBTC', 'Wrapped BTC'),
 }
 
-export const DAI: ChainTokenMap = {
+export const DAI = {
   [ChainId.MAINNET]: new Token(ChainId.KOVAN, '0x27C70Cd1946795B66be9d954418546998b546634', 18, 'DAI', 'DAI'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x560EA439FA3c8ee6A4cE43a2A74320AcE26Aa97a', 18, 'DAI', 'DAI'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0xdd049E9716a7cdeeeaac3890e6721A378ABa71d8', 18, 'DAI', 'DAI'),
 }
 
-export const BONE: ChainTokenMap = {
+export const BONE = {
   [ChainId.MAINNET]: new Token(ChainId.KOVAN, '0x27C70Cd1946795B66be9d954418546998b546634', 18, 'BONE', 'BONE SHIBASWAP'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x6d4bB7b0559Aebfc55A42cFEAAeb287c01a7f244', 18, 'BONE', 'BONE SHIBASWAP'),
   [ChainId.ROPSTEN]: new Token(ChainId.KOVAN, '0x46BA04f6C5339B091D16803Bb47020f5842B457e', 18, 'BONE', 'BONE SHIBASWAP')
