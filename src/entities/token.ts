@@ -179,19 +179,20 @@ export const USDT = {
 }
 
 export const WBTC = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599', 8, 'WBTC', 'Wrapped BTC'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599', 8, 'WBTC', 'Wrapped BTC'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x3673628B0a9B27480c57026FCddc9Ac16d61A6EA', 8, 'WBTC', 'Wrapped BTC'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0xc59837d0AeBCC6AF23Dcb3c23eb757b07B0EaE0c', 8, 'WBTC', 'Wrapped BTC'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xe12a4A6a6d0BFe96145D313D4d320bE664F385DF', 8, 'WBTC', 'Wrapped BTC'),
 }
 
 export const DAI = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x6b175474e89094c44da98b954eedeac495271d0f', 18, 'DAI', 'Dai Stablecoin'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x6B175474E89094C44Da98b954EedeAC495271d0F', 18, 'DAI', 'Dai Stablecoin'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x560EA439FA3c8ee6A4cE43a2A74320AcE26Aa97a', 18, 'DAI', 'Dai Stablecoin'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0xdd049E9716a7cdeeeaac3890e6721A378ABa71d8', 18, 'DAI', 'Dai Stablecoin'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x102121d11a638eF1AAB9f772dE34Ea0A30cf97eb', 18, 'DAI', 'Dai Stablecoin'),
 }
 
+//TODO: UPDATE MAINNET ADDRESS
 export const BONE = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x27C70Cd1946795B66be9d954418546998b546634', 18, 'BONE', 'BONE SHIBASWAP'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x6d4bB7b0559Aebfc55A42cFEAAeb287c01a7f244', 18, 'BONE', 'BONE SHIBASWAP'),
@@ -217,14 +218,14 @@ export const LEASH = {
 }
 
 export const UNISWAP_TOKEN = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984', 18, 'UNI', 'Uniswap'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984', 18, 'UNI', 'Uniswap'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'UNI', 'Uniswap'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x066141B68F211E89F1bBBea09B227f380EB783c4', 18, 'UNI', 'Uniswap'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'),
 }
 
 export const SUSHI_TOKEN = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x6b3595068778dd592e39a122f4f5a5cf09c90fe2', 18, 'SUSHI', 'SushiToken'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2', 18, 'SUSHI', 'SushiToken'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'SUSHI', 'SushiToken'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x1e3f4b46E8ab182aD1ea0544b4fFf9Ff4eD9Fa5B', 18, 'SUSHI', 'SushiToken'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x874c04a195e6696A53E7d856dAe055876fA367f6', 18, 'SUSHI', 'SushiToken'),
@@ -232,7 +233,7 @@ export const SUSHI_TOKEN = {
 }
 
 export const LINK_TOKEN = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x514910771af9ca656af840dff83e8264ecf986ca', 18, 'LINK', 'ChainLink Token'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x514910771AF9Ca656af840dff83E8264EcF986CA', 18, 'LINK', 'ChainLink Token'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'LINK', 'ChainLink Token'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x856333e55dae762c80208C652671EDf124210Efd', 18, 'LINK', 'ChainLink Token'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xC597CEDF0708486aC170Acb0e8Ca921008a88dDf', 18, 'LINK', 'ChainLink Token'),
@@ -246,14 +247,14 @@ export const XFUND_TOKEN = {
 }
 
 export const SNX_TOKEN = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f', 18, 'SNX', 'Synthetix Network Token'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F', 18, 'SNX', 'Synthetix Network Token'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'SNX', 'Synthetix Network Token'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0xb5812B65dD0c0819A3cdd1Ae98bEa3871230c1aF', 18, 'SNX', 'Synthetix Network Token'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x176f93342918A86CF53bE0BF595D68e27d2E629E', 18, 'SNX', 'Synthetix Network Token'),
 }
 
 export const GRT_TOKEN = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0xc944e90c64b2c07662a292be6244bdf05cda44a7', 18, 'GRT', 'Graph Token'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0xc944E90C64B2c07662A292be6244BDf05Cda44a7', 18, 'GRT', 'Graph Token'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'GRT', 'Graph Token'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x499252B5ff27c846B6c2303f333b12A32bBf5EFC', 18, 'GRT', 'Graph Token'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xE778fAE3298AF5E7dB106246593f29Ae14F18244', 18, 'GRT', 'Graph Token'),
@@ -267,21 +268,21 @@ export const MEME_TOKEN = {
 }
 
 export const ELON_TOKEN = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x761d38e5ddf6ccf6cf7c55759d5210750b5d60f3', 18, 'ELON', 'Dogelon'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x761D38e5ddf6ccf6Cf7c55759d5210750B5D60F3', 18, 'ELON', 'Dogelon'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'ELON', 'Dogelon'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x60456F41B0De8764fd180d00cF40AD23D5998EF5', 18, 'ELON', 'Dogelon'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x3c188aE815f6a319BE43dc3c53A264C1BB854fe6', 18, 'ELON', 'Dogelon'),
 }
 
 export const DUCK_TOKEN = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x92e187a03b6cd19cb6af293ba17f2745fd2357d5', 18, 'DUCK', 'Unit protocol'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x761D38e5ddf6ccf6Cf7c55759d5210750B5D60F3', 18, 'DUCK', 'Unit protocol'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'DUCK', 'Unit protocol'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'DUCK', 'Unit protocol'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xDD5eC7673aC92f647B5d4D8e51205A07e76536A8', 18, 'DUCK', 'Unit protocol'),
 }
 
 export const VXV_TOKEN = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x7d29a64504629172a429e64183d6673b9dacbfce', 18, 'VXV', 'VectorspaceAI'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x7D29A64504629172a429e64183D6673b9dAcbFCe', 18, 'VXV', 'VectorspaceAI'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'VXV', 'VectorspaceAI'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'VXV', 'VectorspaceAI'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'VXV', 'VectorspaceAI'),
