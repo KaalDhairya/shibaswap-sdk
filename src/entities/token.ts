@@ -275,10 +275,10 @@ export const ELON_TOKEN: ChainTokenMap = {
 }
 
 export const DUCK_TOKEN: ChainTokenMap = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x761D38e5ddf6ccf6Cf7c55759d5210750B5D60F3', 18, 'DUCK', 'Unit protocol'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'DUCK', 'Unit protocol'),
-  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'DUCK', 'Unit protocol'),
-  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xDD5eC7673aC92f647B5d4D8e51205A07e76536A8', 18, 'DUCK', 'Unit protocol'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x92E187a03B6CD19CB6AF293ba17F2745Fd2357D5', 18, 'DUCK', 'Unit protocol (DUCK)'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'DUCK', 'Unit protocol (DUCK)'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'DUCK', 'Unit protocol (DUCK)'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xDD5eC7673aC92f647B5d4D8e51205A07e76536A8', 18, 'DUCK', 'Unit protocol (DUCK)'),
 }
 
 export const VXV_TOKEN: ChainTokenMap = {
