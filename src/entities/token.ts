@@ -241,9 +241,9 @@ export const LINK_TOKEN: ChainTokenMap = {
 
 export const XFUND_TOKEN: ChainTokenMap = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x892A6f9dF0147e5f079b0993F486F9acA3c87881', 9, 'xFUND', 'unification.com/xfund'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'xFUND', 'unification.com/xfund'),
-  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x7fb775eAe1B6Ab3f9a65b6C718C331D3b56d6F25', 18, 'xFUND', 'unification.com/xfund'),
-  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x5Ff20Fc8F267C7df40893735776a08de20Eea72a', 18, 'xFUND', 'unification.com/xfund'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 9, 'xFUND', 'unification.com/xfund'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x7fb775eAe1B6Ab3f9a65b6C718C331D3b56d6F25', 9, 'xFUND', 'unification.com/xfund'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x5Ff20Fc8F267C7df40893735776a08de20Eea72a', 9, 'xFUND', 'unification.com/xfund'),
 }
 
 export const SNX_TOKEN: ChainTokenMap = {
