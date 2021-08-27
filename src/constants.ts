@@ -266,7 +266,7 @@ export const SHIBASWAP_UNI_FETCH_ADDRESS: { [chainId in ChainId]: string } = {
 
 
 export const SHIBASWAP_SUSHI_FETCH_ADDRESS: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '0x30a2C7b6bcAa9DAA500106deA66315e87F7723dd',
+  [ChainId.MAINNET]: '0xb77Ff862c4f02509D44A75C9543237D68EC6c1bd',
   [ChainId.ROPSTEN]: '0x5B25D81178e7fD2BDe3F6173847ecbA5450b59b4',
   [ChainId.RINKEBY]: '0x5264502c1E8f8199edaB27371412f7443a42B468',
   [ChainId.GÖRLI]: '',
