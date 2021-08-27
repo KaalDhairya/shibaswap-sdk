@@ -287,3 +287,35 @@ export const VXV_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'VXV', 'VectorspaceAI'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'VXV', 'VectorspaceAI'),
 }
+
+// All test net addresses are wrong
+export const PERL_TOKEN: ChainTokenMap = {
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0xeca82185adCE47f39c684352B0439f030f860318', 18, 'PERL', 'Perlin'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'PERL', 'Perlin'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'PERL', 'Perlin'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'PERL', 'Perlin'),
+}
+
+// All test net addresses are wrong
+export const F9_TOKEN: ChainTokenMap = {
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x38A94e92A19E970c144DEd0B2DD47278CA11CC1F', 9, 'F9', 'Falcon 9'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 9, 'F9', 'Falcon 9'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 9, 'F9', 'Falcon 9'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 9, 'F9', 'Falcon 9'),
+}
+
+// All test net addresses are wrong
+export const ZIG_TOKEN: ChainTokenMap = {
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x7BeBd226154E865954A87650FAefA8F485d36081', 18, 'ZIG', 'ZigCoin'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'ZIG', 'ZigCoin'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'ZIG', 'ZigCoin'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'ZIG', 'ZigCoin'),
+}
+
+// All test net addresses are wrong
+export const RYOSHIS_TOKEN: ChainTokenMap = {
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x777E2ae845272a2F540ebf6a3D03734A5a8f618e', 18, 'RYOSHI', 'Ryoshis Vision'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'RYOSHI', 'Ryoshis Vision'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'RYOSHI', 'Ryoshis Vision'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'RYOSHI', 'Ryoshis Vision'),
+}
