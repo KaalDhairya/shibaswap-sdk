@@ -319,3 +319,11 @@ export const RYOSHIS_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'RYOSHI', 'Ryoshis Vision'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'RYOSHI', 'Ryoshis Vision'),
 }
+
+// All test net addresses are wrong
+export const CIV_TOKEN: ChainTokenMap = {
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x37fE0f067FA808fFBDd12891C0858532CFE7361d', 18, 'CIV', 'Civilization'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x37fE0f067FA808fFBDd12891C0858532CFE7361d', 18, 'CIV', 'Civilization'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x37fE0f067FA808fFBDd12891C0858532CFE7361d', 18, 'CIV', 'Civilization'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x37fE0f067FA808fFBDd12891C0858532CFE7361d', 18, 'CIV', 'Civilization'),
+}
