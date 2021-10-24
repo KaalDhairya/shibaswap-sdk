@@ -514,3 +514,11 @@ export const CIV_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } =
   [ChainId.KOVAN]: '0x8503Bf17460Aed3d19e5e09BBC2B8d70aA79ec6e',
   [ChainId.RINKEBY]: '0x8503Bf17460Aed3d19e5e09BBC2B8d70aA79ec6e'
 }
+
+// Test network addreses are not corerct. Copied from mainnet
+export const BASIC_BONE_REWARDS_MERKLE_DISTRIBUTOR: { [chainId in ChainId]?: string } = {
+  [ChainId.MAINNET]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB',
+  [ChainId.ROPSTEN]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB',
+  [ChainId.KOVAN]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB',
+  [ChainId.RINKEBY]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB'
+}
