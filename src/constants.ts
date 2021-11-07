@@ -522,3 +522,19 @@ export const BASIC_BONE_REWARDS_MERKLE_DISTRIBUTOR: { [chainId in ChainId]?: str
   [ChainId.KOVAN]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB',
   [ChainId.RINKEBY]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB'
 }
+
+// Test network addreses are not corerct. Copied from mainnet
+export const VEMP_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
+  [ChainId.MAINNET]: '0xC2cB0C2bDE7436Fb90C187bA072a5038B3Fd172f',
+  [ChainId.ROPSTEN]: '0xC2cB0C2bDE7436Fb90C187bA072a5038B3Fd172f',
+  [ChainId.KOVAN]: '0xC2cB0C2bDE7436Fb90C187bA072a5038B3Fd172f',
+  [ChainId.RINKEBY]: '0xC2cB0C2bDE7436Fb90C187bA072a5038B3Fd172f'
+}
+
+// Test network addreses are not corerct. Copied from mainnet
+export const UFO_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
+  [ChainId.MAINNET]: '0x49b7B2cBa504088Ff94615d8929d41F5535d1877',
+  [ChainId.ROPSTEN]: '0x49b7B2cBa504088Ff94615d8929d41F5535d1877',
+  [ChainId.KOVAN]: '0x49b7B2cBa504088Ff94615d8929d41F5535d1877',
+  [ChainId.RINKEBY]: '0x49b7B2cBa504088Ff94615d8929d41F5535d1877'
+}

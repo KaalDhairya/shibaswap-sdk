@@ -327,3 +327,19 @@ export const CIV_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x37fE0f067FA808fFBDd12891C0858532CFE7361d', 18, 'CIV', 'Civilization'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x37fE0f067FA808fFBDd12891C0858532CFE7361d', 18, 'CIV', 'Civilization'),
 }
+
+// All test net addresses are wrong
+export const VEMP_TOKEN: ChainTokenMap = {
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0xcFEB09C3c5F0f78aD72166D55f9e6E9A60e96eEC', 18, 'VEMP', 'vEmpire Gamer Token'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xcFEB09C3c5F0f78aD72166D55f9e6E9A60e96eEC', 18, 'VEMP', 'vEmpire Gamer Token'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0xcFEB09C3c5F0f78aD72166D55f9e6E9A60e96eEC', 18, 'VEMP', 'vEmpire Gamer Token'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xcFEB09C3c5F0f78aD72166D55f9e6E9A60e96eEC', 18, 'VEMP', 'vEmpire Gamer Token'),
+}
+
+// All test net addresses are wrong
+export const UFO_TOKEN: ChainTokenMap = {
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B', 18, 'UFO', 'THE TRUTH'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B', 18, 'UFO', 'THE TRUTH'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B', 18, 'UFO', 'THE TRUTH'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B', 18, 'UFO', 'THE TRUTH'),
+}
