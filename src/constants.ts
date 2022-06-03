@@ -500,6 +500,14 @@ export const RYOSHIS_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string
 }
 
 // Test network addreses are not corerct. Copied from tBone
+export const RYOSHIS_MERKLE_DISTRIBUTOR_ADDRESS_2: { [chainId in ChainId]?: string } = {
+  [ChainId.MAINNET]: '0xD43C2F31906140d148B18BA8f2f87c5671D0413a',
+  [ChainId.ROPSTEN]: '0xF4F4Db3EeaF5D1636fADa510cA1726f6280196D4',
+  [ChainId.KOVAN]: '0xB5e57C142737c9ab974048268DfAc89A50DA2E70',
+  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b'
+}
+
+// Test network addreses are not corerct. Copied from tBone
 export const ZIG_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '0x2697B304724f277F4AD498a2792D694917bc640F',
   [ChainId.ROPSTEN]: '0xF4F4Db3EeaF5D1636fADa510cA1726f6280196D4',
