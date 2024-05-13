@@ -12,6 +12,7 @@ export class Token extends Currency {
 
   public constructor(chainId: ChainId, address: string, decimals: number, symbol?: string, name?: string) {
     super(decimals, symbol, name)
+    console.log('make Token ', chainId, decimals, symbol, name, address)
     this.chainId = chainId
     this.address = validateAndParseAddress(address)
   }
@@ -265,8 +266,8 @@ export const UNISWAP_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x066141B68F211E89F1bBBea09B227f380EB783c4', 18, 'UNI', 'Uniswap'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'), // dummy data
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'), // dummy
 }
 
 export const SUSHI_TOKEN: ChainTokenMap = {
@@ -275,8 +276,8 @@ export const SUSHI_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x1e3f4b46E8ab182aD1ea0544b4fFf9Ff4eD9Fa5B', 18, 'SUSHI', 'SushiToken'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x874c04a195e6696A53E7d856dAe055876fA367f6', 18, 'SUSHI', 'SushiToken'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x874c04a195e6696A53E7d856dAe055876fA367f6', 18, 'SUSHI', 'SushiToken'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'SUSHI', 'SushiToken'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'SUSHI', 'SushiToken'),
 
 }
 
@@ -286,8 +287,8 @@ export const LINK_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x856333e55dae762c80208C652671EDf124210Efd', 18, 'LINK', 'ChainLink Token'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xC597CEDF0708486aC170Acb0e8Ca921008a88dDf', 18, 'LINK', 'ChainLink Token'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xC597CEDF0708486aC170Acb0e8Ca921008a88dDf', 18, 'LINK', 'ChainLink Token'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'LINK', 'ChainLink Token'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'LINK', 'ChainLink Token'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'LINK', 'ChainLink Token'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'LINK', 'ChainLink Token'),
 }
 
 export const XFUND_TOKEN: ChainTokenMap = {
@@ -296,8 +297,8 @@ export const XFUND_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x7fb775eAe1B6Ab3f9a65b6C718C331D3b56d6F25', 9, 'xFUND', 'unification.com/xfund'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x5Ff20Fc8F267C7df40893735776a08de20Eea72a', 9, 'xFUND', 'unification.com/xfund'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x5Ff20Fc8F267C7df40893735776a08de20Eea72a', 9, 'xFUND', 'unification.com/xfund'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 9, 'xFUND', 'unification.com/xfund'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 9, 'xFUND', 'unification.com/xfund'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 9, 'xFUND', 'unification.com/xfund'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 9, 'xFUND', 'unification.com/xfund'),
 }
 
 export const SNX_TOKEN: ChainTokenMap = {
@@ -306,8 +307,8 @@ export const SNX_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0xb5812B65dD0c0819A3cdd1Ae98bEa3871230c1aF', 18, 'SNX', 'Synthetix Network Token'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x176f93342918A86CF53bE0BF595D68e27d2E629E', 18, 'SNX', 'Synthetix Network Token'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x176f93342918A86CF53bE0BF595D68e27d2E629E', 18, 'SNX', 'Synthetix Network Token'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 export const GRT_TOKEN: ChainTokenMap = {
@@ -316,8 +317,8 @@ export const GRT_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x499252B5ff27c846B6c2303f333b12A32bBf5EFC', 18, 'GRT', 'Graph Token'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xE778fAE3298AF5E7dB106246593f29Ae14F18244', 18, 'GRT', 'Graph Token'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xE778fAE3298AF5E7dB106246593f29Ae14F18244', 18, 'GRT', 'Graph Token'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 export const MEME_TOKEN: ChainTokenMap = {
@@ -326,8 +327,8 @@ export const MEME_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0xb50D7AfeC417922BdCD9Da7F36ed4D5FDa14a397', 8, 'MEME', 'MEME'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x349d678CED86Cc0d39B25A0cdF749F9Dde6FD655', 8, 'MEME', 'MEME'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x349d678CED86Cc0d39B25A0cdF749F9Dde6FD655', 8, 'MEME', 'MEME'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 export const ELON_TOKEN: ChainTokenMap = {
@@ -336,8 +337,8 @@ export const ELON_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x60456F41B0De8764fd180d00cF40AD23D5998EF5', 18, 'ELON', 'Dogelon'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x3c188aE815f6a319BE43dc3c53A264C1BB854fe6', 18, 'ELON', 'Dogelon'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x3c188aE815f6a319BE43dc3c53A264C1BB854fe6', 18, 'ELON', 'Dogelon'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 export const DUCK_TOKEN: ChainTokenMap = {
@@ -346,8 +347,8 @@ export const DUCK_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'DUCK', 'Unit protocol (DUCK)'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xDD5eC7673aC92f647B5d4D8e51205A07e76536A8', 18, 'DUCK', 'Unit protocol (DUCK)'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xDD5eC7673aC92f647B5d4D8e51205A07e76536A8', 18, 'DUCK', 'Unit protocol (DUCK)'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 export const VXV_TOKEN: ChainTokenMap = {
@@ -356,8 +357,8 @@ export const VXV_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'VXV', 'VectorspaceAI'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'VXV', 'VectorspaceAI'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'VXV', 'VectorspaceAI'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 // All test net addresses are wrong
@@ -367,8 +368,8 @@ export const PERL_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'PERL', 'Perlin'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'PERL', 'Perlin'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'PERL', 'Perlin'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 // All test net addresses are wrong
@@ -378,8 +379,8 @@ export const F9_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 9, 'F9', 'Falcon 9'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 9, 'F9', 'Falcon 9'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 9, 'F9', 'Falcon 9'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 // All test net addresses are wrong
@@ -389,8 +390,8 @@ export const ZIG_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'ZIG', 'ZigCoin'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'ZIG', 'ZigCoin'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'ZIG', 'ZigCoin'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 // All test net addresses are wrong
@@ -400,8 +401,8 @@ export const RYOSHIS_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'RYOSHI', 'Ryoshis Vision'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'RYOSHI', 'Ryoshis Vision'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x6d8413B2E48Bb2AabC3Cfc3F3D3991EC904C9fC4', 18, 'RYOSHI', 'Ryoshis Vision'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 // All test net addresses are wrong
@@ -411,8 +412,8 @@ export const CIV_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x37fE0f067FA808fFBDd12891C0858532CFE7361d', 18, 'CIV', 'Civilization'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x37fE0f067FA808fFBDd12891C0858532CFE7361d', 18, 'CIV', 'Civilization'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x37fE0f067FA808fFBDd12891C0858532CFE7361d', 18, 'CIV', 'Civilization'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 // All test net addresses are wrong
@@ -422,8 +423,8 @@ export const VEMP_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0xcFEB09C3c5F0f78aD72166D55f9e6E9A60e96eEC', 18, 'VEMP', 'vEmpire Gamer Token'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xcFEB09C3c5F0f78aD72166D55f9e6E9A60e96eEC', 18, 'VEMP', 'vEmpire Gamer Token'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xcFEB09C3c5F0f78aD72166D55f9e6E9A60e96eEC', 18, 'VEMP', 'vEmpire Gamer Token'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
 
 // All test net addresses are wrong
@@ -433,6 +434,6 @@ export const UFO_TOKEN: ChainTokenMap = {
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B', 18, 'UFO', 'THE TRUTH'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B', 18, 'UFO', 'THE TRUTH'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B', 18, 'UFO', 'THE TRUTH'),
-  [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'UNI', 'Uniswap'),
+  // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'UNI', 'Uniswap'),
 }
