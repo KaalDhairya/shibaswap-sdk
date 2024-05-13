@@ -23,7 +23,10 @@ export enum ChainId {
   HECO = 128,
   HECO_TESTNET = 256,
   HARMONY = 1666600000,
-  HARMONY_TESTNET = 1666700000
+  HARMONY_TESTNET = 1666700000,
+  SEPOLIA = 11155111,
+  PUPPYNET = 157,
+  SHIBARIUM = 109
 }
 
 export enum TradeType {
@@ -62,7 +65,10 @@ export const SUSHI_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
   [ChainId.HECO_TESTNET]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
   [ChainId.HARMONY]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
-  [ChainId.HARMONY_TESTNET]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4'
+  [ChainId.HARMONY_TESTNET]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
+  [ChainId.SEPOLIA]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 export const SHIBASWAP_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
@@ -85,7 +91,10 @@ export const SHIBASWAP_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA]: '0xb9E15055807FcDd1f845c1eBF04BF7A176379faA',
+  [ChainId.PUPPYNET] : '0xb9E15055807FcDd1f845c1eBF04BF7A176379faA',
+  [ChainId.SHIBARIUM] : '0xA6A3d6B8031499F88A2F7181aCfeD2714FaF17d5'
 }
 
 
@@ -109,7 +118,10 @@ export const SHIBASWAP_ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA] : '',
+  [ChainId.PUPPYNET] : '0x48717E3f404031B00ECA7A69E3918f541c496E0d',
+  [ChainId.SHIBARIUM] : '0xae5C1002Ba8c8Ea30b9fa7cB3cf02CC03D82542a'
 }
 
 
@@ -133,7 +145,10 @@ export const SHIBASWAP_BONE_TOKEN_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA] : '',
+  [ChainId.PUPPYNET] : '0x0000000000000000000000000000000000001010',
+  [ChainId.SHIBARIUM] : '0x0000000000000000000000000000000000001010'
 }
 
 
@@ -157,7 +172,10 @@ export const SHIBASWAP_BURY_BONE_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA] : '',
+  [ChainId.PUPPYNET] : '0x9d85c1420622ba1ad21B8299AEEFb3356037a984',
+  [ChainId.SHIBARIUM] : '0x9d85c1420622ba1ad21B8299AEEFb3356037a984'
 }
 
 
@@ -181,7 +199,10 @@ export const SHIBASWAP_BURY_LEASH_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA] : '',
+  [ChainId.PUPPYNET] : '0x5a7540C532f744C108dE81d6FE4c6aD614587A53',
+  [ChainId.SHIBARIUM] : '0x5a7540C532f744C108dE81d6FE4c6aD614587A53'
 }
 
 
@@ -205,7 +226,10 @@ export const SHIBASWAP_BURY_SHIB_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA] : '',
+  [ChainId.PUPPYNET] : '0x6f4A7A3063C531F3124f7a5c50331f5b35235Dd8',
+  [ChainId.SHIBARIUM] : '0x6f4A7A3063C531F3124f7a5c50331f5b35235Dd8'
 }
 
 
@@ -213,7 +237,10 @@ export const BONE_LOCKER_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '0xa404F66B9278c4aB8428225014266B4B239bcdc7',
   [ChainId.ROPSTEN]: '0x951AbEe165d76F4CAbCB7e053a69CDd581d615f1',
   [ChainId.RINKEBY]: '0xa404F66B9278c4aB8428225014266B4B239bcdc7',
-  [ChainId.KOVAN]: '0xA18529a564ED8d6EeDDFd468104f321b5844d83a'
+  [ChainId.KOVAN]: '0xA18529a564ED8d6EeDDFd468104f321b5844d83a',
+  [ChainId.SEPOLIA] : '',
+  [ChainId.PUPPYNET] : '0x15176d8986817C0B58e6fb7EB31dfFB56D195987',
+  [ChainId.SHIBARIUM] : '0x15176d8986817C0B58e6fb7EB31dfFB56D195987'
 }
 
 
@@ -237,7 +264,10 @@ export const SHIBASWAP_TOPDOG_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '0x0aD1b189c682D4Dc16a54f173d2dbe6cEafD3141',
+  [ChainId.SHIBARIUM] : '0x0aD1b189c682D4Dc16a54f173d2dbe6cEafD3141'
 }
 
 
@@ -261,7 +291,10 @@ export const SHIBASWAP_UNI_FETCH_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 
@@ -285,7 +318,10 @@ export const SHIBASWAP_SUSHI_FETCH_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 
@@ -294,7 +330,10 @@ export const SHIBA_DASHBOARD_1_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.ROPSTEN]: '0x06E241217525A421e266D8B37823CF6AAa634EB2',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0x52e37981D941D13072870d58Ed7cC9c9f50F0C4c'
+  [ChainId.KOVAN]: '0x52e37981D941D13072870d58Ed7cC9c9f50F0C4c',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 
@@ -303,7 +342,10 @@ export const SHIBA_DASHBOARD_2_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.ROPSTEN]: '0x87F1e3A5A71F3e351F1037d1dCB64D0dbbAD26E1',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0x695F54EE70b98DC971554034139cd9b78E771a11'
+  [ChainId.KOVAN]: '0x695F54EE70b98DC971554034139cd9b78E771a11',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 
@@ -327,7 +369,10 @@ export const SHIBASWAP_SHIB_TOKEN_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA] : '',
+  [ChainId.PUPPYNET] : '0xAc720702Df63fa92416B3dEB24Dc4a1854f73330',
+  [ChainId.SHIBARIUM] : '0x495eea66B0f8b636D441dC6a98d8F5C3D455C4c0'
 }
 
 
@@ -351,7 +396,10 @@ export const SHIBASWAP_LEASH_TOKEN_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '0x367a6722F2e2b09b6024A1C05deAD45e68CE385A',
+  [ChainId.SHIBARIUM] : '0x65218A41Fb92637254B4f8c97448d3dF343A3064'
 }
 
 // Mostly not needed
@@ -376,7 +424,10 @@ export const SHIBASWAP_TIMELOCK_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
-  [ChainId.HARMONY_TESTNET]: ''
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA] : '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 // TODO GOLIVE
@@ -385,7 +436,10 @@ export const SHIBA_BORING_HELPER_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.ROPSTEN]: '0x7F561103db907D9865814E8fFFb0cee29BD1B414', // TODO TEMP
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
-  [ChainId.KOVAN]: '0x7F561103db907D9865814E8fFFb0cee29BD1B414'
+  [ChainId.KOVAN]: '0x7F561103db907D9865814E8fFFb0cee29BD1B414',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
@@ -415,56 +469,80 @@ export const xSHIB_BONE_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: str
   [ChainId.MAINNET]: '0xa2c14852974afE7755eA824260Ca5dF03B816458',
   [ChainId.ROPSTEN]: '0x731191b7A770b5bF18C592658e98C1021118a1FC',
   [ChainId.KOVAN]: '0x2918Ab3591c41A21a05e0AD192150AaEBDDfAafC',
-  [ChainId.RINKEBY]: '0x96ffC9220BEe9609D24062699d800d3B32b2f8C5'
+  [ChainId.RINKEBY]: '0x96ffC9220BEe9609D24062699d800d3B32b2f8C5',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 export const xLEASH_BONE_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '0x9495A029Ce34983C0bF0c45EE8214021E95dA26A',
   [ChainId.ROPSTEN]: '0xaE3A7Ab73acfEcaD995E20dC4DD6e05662fa10AE',
   [ChainId.KOVAN]: '0xa658AB33537d5F54AB039BeA74E33D1F30A25CA9',
-  [ChainId.RINKEBY]: '0x6A8b4Eff67909aA4e0dDC600016220562419d2F7'
+  [ChainId.RINKEBY]: '0x6A8b4Eff67909aA4e0dDC600016220562419d2F7',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 export const xSHIB_WETH_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '0x67E0eb8557437aB7393243c88A11F3c7E424cA3D',
   [ChainId.ROPSTEN]: '0x075d0E0aBEa664243697898845BbBEaB4e4D8cC3',
   [ChainId.KOVAN]: '0x73b52f7D4B7261265801Bf90D11E63fC47Af5b78',
-  [ChainId.RINKEBY]: '0x9e7f876580bA07C5E14310cD580B8BBbF7FEB50F'
+  [ChainId.RINKEBY]: '0x9e7f876580bA07C5E14310cD580B8BBbF7FEB50F',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 export const WBTC_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '0x1e26deb7E2b83742384F4DFbb2470947F853a2A4',
   [ChainId.ROPSTEN]: '0x6fFa825db269a91d2E60C68Ab7A38Fa9abf70D9c',
   [ChainId.KOVAN]: '0x220ff4180C3926853d5181f094651816c72986c5',
-  [ChainId.RINKEBY]: '0x129175d454D91Df65795640c264752B9B1eB8738'
+  [ChainId.RINKEBY]: '0x129175d454D91Df65795640c264752B9B1eB8738',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 export const USDT_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '0x5140ecB1aA2DAA8427e724A6a5b3893617d8110c',
   [ChainId.ROPSTEN]: '0x0e31C2d3BDF833114f92a1F0B0897Cb3213E805C',
   [ChainId.KOVAN]: '0x6D8A147cFa68d6d231133193d02e3bc3fDe6d852',
-  [ChainId.RINKEBY]: '0x8B1336aa37b8129B7e5A7EF5d4EFfEc60B34001E'
+  [ChainId.RINKEBY]: '0x8B1336aa37b8129B7e5A7EF5d4EFfEc60B34001E',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 export const USDC_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '0x9E1FDDcfCF7c0917371497AC24d27dB764aAE0FE',
   [ChainId.ROPSTEN]: '0x256c3400c2D196400650B15f07C9F8e88D564B0e',
   [ChainId.KOVAN]: '0x03197C78F25c3d54862e5a33F255e16317004D3c',
-  [ChainId.RINKEBY]: '0x57793Ea74C545618F8E26B6Ecfbb62205885D1C4'
+  [ChainId.RINKEBY]: '0x57793Ea74C545618F8E26B6Ecfbb62205885D1C4',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 export const DAI_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '0x0075f029648FFbd2026a7df1E9EFf27ebC90Ca65',
   [ChainId.ROPSTEN]: '0xB2D3f606197a83e48D0377c8BAdcbF0e7CBEE95b',
   [ChainId.KOVAN]: '0x9aA6C7Dd055c109228644255e63Ee92a13FEC52A',
-  [ChainId.RINKEBY]: '0xbef224eeb6959870511d2280Ce7271c42a2c0B78'
+  [ChainId.RINKEBY]: '0xbef224eeb6959870511d2280Ce7271c42a2c0B78',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 export const tBONE_BONE_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '0xBaAa2B1F770c8AA0f86203C77A6b01E8315b3238',
   [ChainId.ROPSTEN]: '0xF4F4Db3EeaF5D1636fADa510cA1726f6280196D4',
   [ChainId.KOVAN]: '0xB5e57C142737c9ab974048268DfAc89A50DA2E70',
-  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b'
+  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 // Test network addreses are not corerct. Copied from tBone
@@ -472,7 +550,10 @@ export const XFUND_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string }
   [ChainId.MAINNET]: '0x6a425fC7Bc4ed7Cfb3cD89cca9925aba3B900BBe',
   [ChainId.ROPSTEN]: '0xF4F4Db3EeaF5D1636fADa510cA1726f6280196D4',
   [ChainId.KOVAN]: '0xB5e57C142737c9ab974048268DfAc89A50DA2E70',
-  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b'
+  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 // Test network addreses are not corerct. Copied from tBone
@@ -480,7 +561,10 @@ export const PERL_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } 
   [ChainId.MAINNET]: '0x40Ab98602341A294C2b9d6A71266183EDC3EDF76',
   [ChainId.ROPSTEN]: '0xF4F4Db3EeaF5D1636fADa510cA1726f6280196D4',
   [ChainId.KOVAN]: '0xB5e57C142737c9ab974048268DfAc89A50DA2E70',
-  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b'
+  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 // Test network addreses are not corerct. Copied from tBone
@@ -488,7 +572,10 @@ export const F9_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = 
   [ChainId.MAINNET]: '0x63837C5b60Fb7A29d5E8823A07ee98Df3fA83955',
   [ChainId.ROPSTEN]: '0xF4F4Db3EeaF5D1636fADa510cA1726f6280196D4',
   [ChainId.KOVAN]: '0xB5e57C142737c9ab974048268DfAc89A50DA2E70',
-  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b'
+  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 // Test network addreses are not corerct. Copied from tBone
@@ -496,7 +583,10 @@ export const RYOSHIS_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string
   [ChainId.MAINNET]: '0x7732674B5E5FfeC4785AEFdAEa807EeCA383B5e6',
   [ChainId.ROPSTEN]: '0xF4F4Db3EeaF5D1636fADa510cA1726f6280196D4',
   [ChainId.KOVAN]: '0xB5e57C142737c9ab974048268DfAc89A50DA2E70',
-  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b'
+  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 // Test network addreses are not corerct. Copied from tBone
@@ -504,7 +594,10 @@ export const ZIG_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } =
   [ChainId.MAINNET]: '0x2697B304724f277F4AD498a2792D694917bc640F',
   [ChainId.ROPSTEN]: '0xF4F4Db3EeaF5D1636fADa510cA1726f6280196D4',
   [ChainId.KOVAN]: '0xB5e57C142737c9ab974048268DfAc89A50DA2E70',
-  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b'
+  [ChainId.RINKEBY]: '0x492C7770375C2F117B5225AabF656f7B1D0C214b',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 // Test network addreses are not corerct. Copied from mainnet
@@ -512,7 +605,10 @@ export const CIV_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } =
   [ChainId.MAINNET]: '0x8503Bf17460Aed3d19e5e09BBC2B8d70aA79ec6e',
   [ChainId.ROPSTEN]: '0x8503Bf17460Aed3d19e5e09BBC2B8d70aA79ec6e',
   [ChainId.KOVAN]: '0x8503Bf17460Aed3d19e5e09BBC2B8d70aA79ec6e',
-  [ChainId.RINKEBY]: '0x8503Bf17460Aed3d19e5e09BBC2B8d70aA79ec6e'
+  [ChainId.RINKEBY]: '0x8503Bf17460Aed3d19e5e09BBC2B8d70aA79ec6e',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 // Test network addreses are not corerct. Copied from mainnet
@@ -520,7 +616,10 @@ export const BASIC_BONE_REWARDS_MERKLE_DISTRIBUTOR: { [chainId in ChainId]?: str
   [ChainId.MAINNET]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB',
   [ChainId.ROPSTEN]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB',
   [ChainId.KOVAN]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB',
-  [ChainId.RINKEBY]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB'
+  [ChainId.RINKEBY]: '0x205c41bf932A34E14fea6b9B25585b3A5903aEeB',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 // Test network addreses are not corerct. Copied from mainnet
@@ -528,7 +627,10 @@ export const VEMP_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } 
   [ChainId.MAINNET]: '0xC2cB0C2bDE7436Fb90C187bA072a5038B3Fd172f',
   [ChainId.ROPSTEN]: '0xC2cB0C2bDE7436Fb90C187bA072a5038B3Fd172f',
   [ChainId.KOVAN]: '0xC2cB0C2bDE7436Fb90C187bA072a5038B3Fd172f',
-  [ChainId.RINKEBY]: '0xC2cB0C2bDE7436Fb90C187bA072a5038B3Fd172f'
+  [ChainId.RINKEBY]: '0xC2cB0C2bDE7436Fb90C187bA072a5038B3Fd172f',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }
 
 // Test network addreses are not corerct. Copied from mainnet
@@ -536,5 +638,8 @@ export const UFO_MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } =
   [ChainId.MAINNET]: '0x49b7B2cBa504088Ff94615d8929d41F5535d1877',
   [ChainId.ROPSTEN]: '0x49b7B2cBa504088Ff94615d8929d41F5535d1877',
   [ChainId.KOVAN]: '0x49b7B2cBa504088Ff94615d8929d41F5535d1877',
-  [ChainId.RINKEBY]: '0x49b7B2cBa504088Ff94615d8929d41F5535d1877'
+  [ChainId.RINKEBY]: '0x49b7B2cBa504088Ff94615d8929d41F5535d1877',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '',
+  [ChainId.SHIBARIUM] : ''
 }

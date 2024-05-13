@@ -31,6 +31,8 @@ export class Currency {
 
   public static readonly ONE: Currency = new Currency(18, 'ONE', 'Harmony')
 
+  public static readonly BONE: Currency = new Currency(18, 'BONE', 'BONE')
+
   public static readonly NATIVE = {
     [ChainId.MAINNET]: Currency.ETHER,
     [ChainId.ROPSTEN]: Currency.ETHER,
@@ -51,7 +53,10 @@ export class Currency {
     [ChainId.HECO]: Currency.HT,
     [ChainId.HECO_TESTNET]: Currency.HT,
     [ChainId.HARMONY]: Currency.ONE,
-    [ChainId.HARMONY_TESTNET]: Currency.ONE
+    [ChainId.HARMONY_TESTNET]: Currency.ONE,
+    [ChainId.SEPOLIA]: Currency.ETHER,
+    [ChainId.PUPPYNET]: Currency.BONE,
+    [ChainId.SHIBARIUM]: Currency.BONE,
   }
 
   /**
