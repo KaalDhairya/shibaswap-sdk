@@ -12,7 +12,6 @@ export class Token extends Currency {
 
   public constructor(chainId: ChainId, address: string, decimals: number, symbol?: string, name?: string) {
     super(decimals, symbol, name)
-    console.log('make Token ', chainId, decimals, symbol, name, address)
     this.chainId = chainId
     this.address = validateAndParseAddress(address)
   }
