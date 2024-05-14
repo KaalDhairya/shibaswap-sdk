@@ -43,7 +43,33 @@ export enum Rounding {
 // TODO REMOVE
 export const INIT_CODE_HASH: string = '0xe18a34eb0e04b04f7a0ac29a6e80748dca96319b42c54d679cb821dca90c6303'
 // TODO GOLIVE
-export const SHIBA_CODE_HASH: string = '0x65d1a3b1e46c6e4f1be1ad5f99ef14dc488ae0549dc97db9b30afe2241ce1c7a'
+export const SHIBA_CODE_HASH: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: '0x65d1a3b1e46c6e4f1be1ad5f99ef14dc488ae0549dc97db9b30afe2241ce1c7a',
+  [ChainId.ROPSTEN]: '',
+  [ChainId.RINKEBY]: '',
+  [ChainId.GÖRLI]: '',
+  [ChainId.KOVAN]: '',
+  [ChainId.FANTOM]: '',
+  [ChainId.FANTOM_TESTNET]: '',
+  [ChainId.MATIC]: '',
+  [ChainId.MATIC_TESTNET]: '',
+  [ChainId.XDAI]: '',
+  [ChainId.BSC]: '',
+  [ChainId.BSC_TESTNET]: '',
+  [ChainId.ARBITRUM]: '',
+  [ChainId.MOONBASE]: '',
+  [ChainId.AVALANCHE]: '',
+  [ChainId.FUJI]: '',
+  [ChainId.HECO]: '',
+  [ChainId.HECO_TESTNET]: '',
+  [ChainId.HARMONY]: '',
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.SEPOLIA]: '',
+  [ChainId.PUPPYNET] : '0x65d1a3b1e46c6e4f1be1ad5f99ef14dc488ae0549dc97db9b30afe2241ce1c7a',
+  [ChainId.SHIBARIUM] : '0xce322ba2c6b510c645a54df956e07882b8998f02bfad06fc7b20790386b7c1b8'
+}
+
+'0x65d1a3b1e46c6e4f1be1ad5f99ef14dc488ae0549dc97db9b30afe2241ce1c7a'
 // TODO REMOVE
 export const SUSHI_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac',
