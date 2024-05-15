@@ -66,10 +66,9 @@ export const SHIBA_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.HARMONY_TESTNET]: '',
   [ChainId.SEPOLIA]: '',
   [ChainId.PUPPYNET] : '0x65d1a3b1e46c6e4f1be1ad5f99ef14dc488ae0549dc97db9b30afe2241ce1c7a',
-  [ChainId.SHIBARIUM] : '0xce322ba2c6b510c645a54df956e07882b8998f02bfad06fc7b20790386b7c1b8'
+  [ChainId.SHIBARIUM] : '0x65d1a3b1e46c6e4f1be1ad5f99ef14dc488ae0549dc97db9b30afe2241ce1c7a'
 }
 
-'0x65d1a3b1e46c6e4f1be1ad5f99ef14dc488ae0549dc97db9b30afe2241ce1c7a'
 // TODO REMOVE
 export const SUSHI_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac',
@@ -120,7 +119,7 @@ export const SHIBASWAP_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HARMONY_TESTNET]: '',
   [ChainId.SEPOLIA]: '0xb9E15055807FcDd1f845c1eBF04BF7A176379faA',
   [ChainId.PUPPYNET] : '0xb9E15055807FcDd1f845c1eBF04BF7A176379faA',
-  [ChainId.SHIBARIUM] : '0xA6A3d6B8031499F88A2F7181aCfeD2714FaF17d5'
+  [ChainId.SHIBARIUM] : '0x938e62594610Dd35A25a1DfE35C94fA0A9f6bfAA'
 }
 
 
@@ -147,7 +146,7 @@ export const SHIBASWAP_ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HARMONY_TESTNET]: '',
   [ChainId.SEPOLIA] : '',
   [ChainId.PUPPYNET] : '0x48717E3f404031B00ECA7A69E3918f541c496E0d',
-  [ChainId.SHIBARIUM] : '0xae5C1002Ba8c8Ea30b9fa7cB3cf02CC03D82542a'
+  [ChainId.SHIBARIUM] : '0x8cD940605159013aC12e63B3b71f7388c61C3DfA'
 }
 
 
