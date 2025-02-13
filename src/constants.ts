@@ -1,7 +1,10 @@
 import JSBI from 'jsbi'
+import RewardABI from './abis/RewardToken.json'
 
 // exports for external consumption
 export type BigintIsh = JSBI | bigint | string
+
+export const REWARD_ABI = RewardABI;
 
 export enum ChainId {
   MAINNET = 1,

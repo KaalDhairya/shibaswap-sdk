@@ -2,7 +2,7 @@
 
 In-depth documentation on this SDK is available at [uniswap.org](https://uniswap.org/docs/v2/SDK/getting-started/).
 
-This modifies uniswap-sdk's UniswapV2Factory address. The new address for sushiswap is  `0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac`.
+This modifies uniswap-sdk's UniswapV2Factory address. The new address for sushiswap is `0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac`.
 
 ## Running tests
 
@@ -51,3 +51,19 @@ Time:        5.091s
 Ran all test suites.
 ✨  Done in 6.61s.
 ```
+
+## Sample Pairs With Amounts for Testing
+
+weth - usdc 0.001 - 2.95
+weth - usdt 0.001 - 2.95
+weth - dai 0.001 - 2.95
+weth - bone 0.001 - 5
+bone - usdt 1 - 0.6
+bone - usdc 1 - 0.6
+bone - dai 1 - 0.6
+bone - shib 1 - 23000
+bone - leash 1 - 0.0014
+usdc - shib 1 - 41000
+usdc - leash 1 - 0.0024
+weth - leash 0.001 - 0.007
+weth - shib 0.001 - 122574
