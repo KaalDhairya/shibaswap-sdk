@@ -1,5 +1,5 @@
 {
-  "name": "shibaswap-sdk",
+  "name": "shibaswap-v1-sdk",
   "license": "MIT",
   "version": "1.0.1",
   "description": "🛠 An SDK for building applications on top of Shibaswap.",
