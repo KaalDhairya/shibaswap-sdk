@@ -178,7 +178,8 @@ export const WETH = {
       18,
       'WBONE',
       'Wrapped Bone'
-  )
+  ),
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether')
 }
 
 export type ChainTokenMap = {
@@ -193,6 +194,7 @@ export const USDC: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x49A04ce101EE69b7ff76691F9EeBD134E581D4eD', 6, 'USDC', 'USD Coin'),
   [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0x63E22542204dA9978218FbB3C10E1c0f6D1DC2a7', 6, 'USDC', 'USD Coin'),
   [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0xf010f12dcA0b96D2d6685bf4dB3dbB4Ad500B6Ad', 6, 'USDC', 'USD Coin'),
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0x488327236B65C61A6c083e8d811a4E0D3d1D4268', 6, 'USDC', 'USD Coin'),
 }
 
 export const USDT: ChainTokenMap = {
@@ -203,6 +205,7 @@ export const USDT: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xE4B52a9781762E6a8d6cc53fD2D6be83f824971E', 6, 'USDT', 'Tether USD'),
   [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0x236a6f60B554813486D84d581747217d77Af05ff', 6, 'USDT', 'Tether USD'),
   [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0xaB082b8ad96c7f47ED70ED971Ce2116469954cFB', 6, 'USDT', 'Tether USD'),
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0x01AaE965a2C2C5E1cBb01B5FaBb4D3B7a00005a4', 6, 'USDT', 'Tether USD'),
 }
 
 export const WBTC: ChainTokenMap = {
@@ -213,6 +216,7 @@ export const WBTC: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xe12a4A6a6d0BFe96145D313D4d320bE664F385DF', 8, 'WBTC', 'Wrapped BTC'),
   [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0x3a042493688489d3482e39435c2F6C8cF85a9d54', 8, 'WBTC', 'Wrapped BTC'),
   [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0xE984D89fb00D0B44E798A55dc41EA598B0b0899d', 8, 'WBTC', 'Wrapped BTC'),
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0x149e3B3Bd69f1Cfc1B42b6A6a152a42E38cEeBf1', 8, 'WBTC', 'Wrapped BTC'),
 }
 
 export const DAI: ChainTokenMap = {
@@ -223,6 +227,7 @@ export const DAI: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x102121d11a638eF1AAB9f772dE34Ea0A30cf97eb', 18, 'DAI', 'Dai Stablecoin'),
   [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0x12CF8bf22Be843f8c065a2474d1C439daDD238b6', 18, 'DAI', 'Dai Stablecoin'),
   [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x0726959d22361B79e4D50A5D157b044A83eC870d', 18, 'DAI', 'Dai Stablecoin'),
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0xC2758d4E32649CCAb6e0112F4dF12Cdd9526D6C0', 18, 'DAI', 'Dai Stablecoin'),
 }
 
 
@@ -233,7 +238,8 @@ export const BONE: ChainTokenMap = {
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xD514244ED479A2050c44B448Ec681FaADd8c7429', 18, 'BONE', 'BONE SHIBASWAP'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xD514244ED479A2050c44B448Ec681FaADd8c7429', 18, 'BONE', 'BONE SHIBASWAP'),
   [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0x0000000000000000000000000000000000001010', 18, 'BONE', 'BONE SHIBASWAP'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x0000000000000000000000000000000000001010', 18, 'BONE', 'BONE SHIBASWAP')
+  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x0000000000000000000000000000000000001010', 18, 'BONE', 'BONE SHIBASWAP'),
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0x472e31c51Ad83C4f7bada3eaA970932426ed1D1B', 18, 'BONE', 'BONE SHIBASWAP')
 }
 
 
@@ -245,7 +251,8 @@ export const SHIBA_INU: ChainTokenMap = {
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0x658f8c0456265DB1a5fC6BC0A7e8eFd6Fa7F302F', 18, 'SHIB', 'SHIBA INU'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x658f8c0456265DB1a5fC6BC0A7e8eFd6Fa7F302F', 18, 'SHIB', 'SHIBA INU'),
   [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0xAc720702Df63fa92416B3dEB24Dc4a1854f73330', 18, 'SHIB', 'SHIBA INU'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x495eea66B0f8b636D441dC6a98d8F5C3D455C4c0', 18, 'SHIB', 'SHIBA INU')
+  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x495eea66B0f8b636D441dC6a98d8F5C3D455C4c0', 18, 'SHIB', 'SHIBA INU'),
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0x52c4b7527c9899b7C4Ec23128063A2dDf361e66E', 18, 'SHIB', 'SHIBA INU')
 }
 
 //TODO GOLIVE TOCHECK DECIMALS
@@ -256,7 +263,8 @@ export const LEASH: ChainTokenMap = {
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xe74ffE1299D39231058C8B6F5AdE8BbF74eeed72', 18, 'LEASH', 'DOGE KILLER'),
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xe74ffE1299D39231058C8B6F5AdE8BbF74eeed72', 18, 'LEASH', 'DOGE KILLER'),
   [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0x367a6722F2e2b09b6024A1C05deAD45e68CE385A', 18, 'LEASH', 'DOGE KILLER'),
-  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x65218A41Fb92637254B4f8c97448d3dF343A3064', 18, 'LEASH', 'DOGE KILLER')
+  [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x65218A41Fb92637254B4f8c97448d3dF343A3064', 18, 'LEASH', 'DOGE KILLER'),
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'LEASH', 'DOGE KILLER')
 }
 
 export const UNISWAP_TOKEN: ChainTokenMap = {
@@ -267,6 +275,7 @@ export const UNISWAP_TOKEN: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'),
   // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'), // dummy data
   // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'), // dummy
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'UNI', 'Uniswap')
 }
 
 export const SUSHI_TOKEN: ChainTokenMap = {
@@ -277,7 +286,7 @@ export const SUSHI_TOKEN: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x874c04a195e6696A53E7d856dAe055876fA367f6', 18, 'SUSHI', 'SushiToken'),
   // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'SUSHI', 'SushiToken'),
   // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'SUSHI', 'SushiToken'),
-
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'SUSHI', 'SushiToken')
 }
 
 export const LINK_TOKEN: ChainTokenMap = {
@@ -288,6 +297,7 @@ export const LINK_TOKEN: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xC597CEDF0708486aC170Acb0e8Ca921008a88dDf', 18, 'LINK', 'ChainLink Token'),
   // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'LINK', 'ChainLink Token'),
   // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'LINK', 'ChainLink Token'),
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'LINK', 'ChainLink Token')
 }
 
 export const XFUND_TOKEN: ChainTokenMap = {
@@ -298,6 +308,7 @@ export const XFUND_TOKEN: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x5Ff20Fc8F267C7df40893735776a08de20Eea72a', 9, 'xFUND', 'unification.com/xfund'),
   // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 9, 'xFUND', 'unification.com/xfund'),
   // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 9, 'xFUND', 'unification.com/xfund'),
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 9, 'xFUND', 'unification.com/xfund')
 }
 
 export const SNX_TOKEN: ChainTokenMap = {

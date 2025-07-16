@@ -57,6 +57,7 @@ export class Currency {
     [ChainId.SEPOLIA]: Currency.ETHER,
     [ChainId.PUPPYNET]: Currency.BONE,
     [ChainId.SHIBARIUM]: Currency.BONE,
+    [ChainId.OPTIMISM_SEPOLIA]: Currency.ETHER,
   }
 
   /**
