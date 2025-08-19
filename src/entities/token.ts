@@ -179,7 +179,7 @@ export const WETH = {
       'WBONE',
       'Wrapped Bone'
   ),
-  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether')
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0xa547E35d95999cA25Fda31897AB7b8fE12cf7617', 18, 'WETH', 'Wrapped Ether')
 }
 
 export type ChainTokenMap = {
@@ -243,7 +243,6 @@ export const BONE: ChainTokenMap = {
 }
 
 
-//TODO GOLIVE TOCHECK DECIMALS
 export const SHIBA_INU: ChainTokenMap = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE', 18, 'SHIB', 'SHIBA INU'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0b2367E0e56Fd9b63388F1478830c8a4b1bA5963', 18, 'SHIB', 'SHIBA INU'),
@@ -255,7 +254,6 @@ export const SHIBA_INU: ChainTokenMap = {
   [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0x52c4b7527c9899b7C4Ec23128063A2dDf361e66E', 18, 'SHIB', 'SHIBA INU')
 }
 
-//TODO GOLIVE TOCHECK DECIMALS
 export const LEASH: ChainTokenMap = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0x27C70Cd1946795B66be9d954418546998b546634', 18, 'LEASH', 'DOGE KILLER'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xf90e84b13FaA6a50A5c361a8d35019C4236b1582', 18, 'LEASH', 'DOGE KILLER'),
@@ -264,7 +262,7 @@ export const LEASH: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xe74ffE1299D39231058C8B6F5AdE8BbF74eeed72', 18, 'LEASH', 'DOGE KILLER'),
   [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0x367a6722F2e2b09b6024A1C05deAD45e68CE385A', 18, 'LEASH', 'DOGE KILLER'),
   [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x65218A41Fb92637254B4f8c97448d3dF343A3064', 18, 'LEASH', 'DOGE KILLER'),
-  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'LEASH', 'DOGE KILLER')
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '0x564a1E4e36bEFfF5F6C056814f2ED65e32CA44b8', 18, 'LEASH', 'DOGE KILLER')
 }
 
 export const UNISWAP_TOKEN: ChainTokenMap = {
@@ -275,7 +273,7 @@ export const UNISWAP_TOKEN: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'),
   // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'), // dummy data
   // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '0x9a2353315b13E9532c3353B910386947b4DB567D', 18, 'UNI', 'Uniswap'), // dummy
-  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'UNI', 'Uniswap')
+  // [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'UNI', 'Uniswap')
 }
 
 export const SUSHI_TOKEN: ChainTokenMap = {
@@ -286,7 +284,7 @@ export const SUSHI_TOKEN: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x874c04a195e6696A53E7d856dAe055876fA367f6', 18, 'SUSHI', 'SushiToken'),
   // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'SUSHI', 'SushiToken'),
   // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'SUSHI', 'SushiToken'),
-  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'SUSHI', 'SushiToken')
+  // [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'SUSHI', 'SushiToken')
 }
 
 export const LINK_TOKEN: ChainTokenMap = {
@@ -297,7 +295,7 @@ export const LINK_TOKEN: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0xC597CEDF0708486aC170Acb0e8Ca921008a88dDf', 18, 'LINK', 'ChainLink Token'),
   // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 18, 'LINK', 'ChainLink Token'),
   // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 18, 'LINK', 'ChainLink Token'),
-  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'LINK', 'ChainLink Token')
+  // [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 18, 'LINK', 'ChainLink Token')
 }
 
 export const XFUND_TOKEN: ChainTokenMap = {
@@ -308,7 +306,7 @@ export const XFUND_TOKEN: ChainTokenMap = {
   [ChainId.SEPOLIA]: new Token(ChainId.SEPOLIA, '0x5Ff20Fc8F267C7df40893735776a08de20Eea72a', 9, 'xFUND', 'unification.com/xfund'),
   // [ChainId.PUPPYNET]: new Token(ChainId.PUPPYNET, '', 9, 'xFUND', 'unification.com/xfund'),
   // [ChainId.SHIBARIUM]: new Token(ChainId.SHIBARIUM, '', 9, 'xFUND', 'unification.com/xfund'),
-  [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 9, 'xFUND', 'unification.com/xfund')
+  // [ChainId.OPTIMISM_SEPOLIA]: new Token(ChainId.OPTIMISM_SEPOLIA, '', 9, 'xFUND', 'unification.com/xfund')
 }
 
 export const SNX_TOKEN: ChainTokenMap = {
